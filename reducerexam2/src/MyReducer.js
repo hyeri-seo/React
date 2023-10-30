@@ -1,26 +1,26 @@
 export const initTodos = [
     {
-        id:3,
-        title:'Todo3',
+        id:1,
+        title:'Todo1',
         count:0,
         complete:false
+    },
+    {
+        id:2,
+        title:'Todo2',
+        count:0,
+        complete:true
     },
     {
         id:3,
         title:'Todo3',
         count:0,
-        complete:false
-    },
-    {
-        id:3,
-        title:'Todo3',
-        count:0,
-        complete:false
+        complete:true
     }
 ]
 
 export const reducer = (state,action) => {
-    switch(acition.type) {
+    switch(action.type) {
         case "COMPLETE" :
             return(
                 state.map(todo=> {
